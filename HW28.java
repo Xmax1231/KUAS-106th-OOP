@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class HW28{
 	public static double input_score() throws IOException{
 		BufferedReader buf;
@@ -6,11 +6,11 @@ public class HW28{
 		int flag=0;
 		double ans;
 		do{
-			System.out.print("¿é¤JÁ`¥­§¡ªº¤À¼Æ: ");
+			System.out.print("è¼¸å…¥ç¸½å¹³å‡çš„åˆ†æ•¸: ");
 			ans = Double.parseDouble(buf.readLine());
 			flag = 1;
 			if(ans<0||ans>100){
-				System.out.println("¿é¤J®æ¦¡¿ù»~¡A½Ğ­«·s¿é¤J¡C");
+				System.out.println("è¼¸å…¥æ ¼å¼éŒ¯èª¤ï¼Œè«‹é‡æ–°è¼¸å…¥ã€‚");
 				flag = 0;
 			}
 		}while(flag!=1);
@@ -20,16 +20,16 @@ public class HW28{
 		int i;
 		BufferedReader buf;
 		buf = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("¿é¤J¾Ç¥Íªº¤H¼Æ: ");
+		System.out.print("è¼¸å…¥å­¸ç”Ÿçš„äººæ•¸: ");
 		int num = Integer.parseInt(buf.readLine()), count=0;
 		char ans = 0;
 		for(i=0; i<num;){
-			System.out.print("¿é¤J¾Ç¥Í¦WºÙ: ");
+			System.out.print("è¼¸å…¥å­¸ç”Ÿåç¨±: ");
 			name[i] = buf.readLine();
 			score[i] = input_score();
 			count++;
 			if(++i<num){
-				System.out.print("¬O§_Ä~Äò¿é¤J¦¨ÁZ(Y/N): ");
+				System.out.print("æ˜¯å¦ç¹¼çºŒè¼¸å…¥æˆç¸¾(Y/N): ");
 				ans = buf.readLine().charAt(0);
 				if(ans == 'N')
 					break;
@@ -39,7 +39,7 @@ public class HW28{
 	}
 	public static void show(String[] name, double[] score, int n) throws IOException{
 		int i;
-		System.out.println("¾Ç¥Í¦WºÙ\tÁ`¥­§¡");
+		System.out.println("å­¸ç”Ÿåç¨±\tç¸½å¹³å‡");
 		for(i=0; i<n; i++){
 			System.out.println(name[i]+"\t\t"+score[i]);
 		}

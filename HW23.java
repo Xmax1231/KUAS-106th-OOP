@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class HW23{
 	public static void main(String[] argv) throws IOException{
 		BufferedReader buf;
@@ -8,7 +8,7 @@ public class HW23{
 		String gg[] = {"0~59","60~69","70~79","80~89","90~100"};
 		char ans = 0;
 
-		System.out.print("½Ğ¿é¤J¾Ç¥Íªº¤H¼Æ:");
+		System.out.print("è«‹è¼¸å…¥å­¸ç”Ÿçš„äººæ•¸:");
 		num = Integer.parseInt(buf.readLine());
 		int usually[] = new int[num];
 		int mid[] = new int[num];
@@ -18,15 +18,15 @@ public class HW23{
 		usually_max = usually_min = mid_max = mid_min = fin_max = fin_min = end_max = end_min = -1;
 
 		for(i=0; i<num; i++){
-			System.out.print("½Ğ¿é¤J¾Ç¥Í" + (i+1) + "ªº¥­®É¦¨ÁZ:");
+			System.out.print("è«‹è¼¸å…¥å­¸ç”Ÿ" + (i+1) + "çš„å¹³æ™‚æˆç¸¾:");
 			usually[i] = Integer.parseInt(buf.readLine());
 			if(usually_max == -1 || usually[usually_max] < usually[i])usually_max = i;
 			if(usually_min == -1 || usually[usually_max] > usually[i])usually_min = i;
-			System.out.print("½Ğ¿é¤J¾Ç¥Í" + (i+1) + "ªº´Á¤¤¦¨ÁZ:");
+			System.out.print("è«‹è¼¸å…¥å­¸ç”Ÿ" + (i+1) + "çš„æœŸä¸­æˆç¸¾:");
 			mid[i] = Integer.parseInt(buf.readLine());
 			if(mid_max == -1 || mid[mid_max] < mid[i])mid_max = i;
 			if(mid_min == -1 || mid[mid_max] > mid[i])mid_min = i;
-			System.out.print("½Ğ¿é¤J¾Ç¥Í" + (i+1) + "ªº´Á¥½¦¨ÁZ:");
+			System.out.print("è«‹è¼¸å…¥å­¸ç”Ÿ" + (i+1) + "çš„æœŸæœ«æˆç¸¾:");
 			fin[i] = Integer.parseInt(buf.readLine());
 			if(fin_max == -1 || fin[fin_max] < fin[i])fin_max = i;
 			if(fin_min == -1 || fin[fin_max] > fin[i])fin_min = i;
@@ -48,17 +48,17 @@ public class HW23{
 		int choice;
 		char choice1;
 		do{
-			System.out.print("½Ğ¿é¤J§A­nªº¥\¯à(1. Åã¥Ü¨C­Ó¾Ç¥Íªº¥ş³¡¦¨ÁZ¡B2. ¦C¥X¾Ç´Á¦¨ÁZ¤£¤Î®æªº¦P¾Ç¤Î¤À¼Æ¡B3. Åã¥Ü¦U­Ó¤À¼Æªº²Õ¶Zªº¤H¼Æ¡B4. ¬d¸ß¬Y¤@­Ó¾Ç¥Íªº¦¨ÁZ¡B5. Åı¨Ï¥ÎªÌ¿ï¾Ü­n¦C¥X­ş¤@ºØ¦¨ÁZªº³Ì°ª¤Î³Ì§C¤À):");
+			System.out.print("è«‹è¼¸å…¥ä½ è¦çš„åŠŸèƒ½(1. é¡¯ç¤ºæ¯å€‹å­¸ç”Ÿçš„å…¨éƒ¨æˆç¸¾ã€2. åˆ—å‡ºå­¸æœŸæˆç¸¾ä¸åŠæ ¼çš„åŒå­¸åŠåˆ†æ•¸ã€3. é¡¯ç¤ºå„å€‹åˆ†æ•¸çš„çµ„è·çš„äººæ•¸ã€4. æŸ¥è©¢æŸä¸€å€‹å­¸ç”Ÿçš„æˆç¸¾ã€5. è®“ä½¿ç”¨è€…é¸æ“‡è¦åˆ—å‡ºå“ªä¸€ç¨®æˆç¸¾çš„æœ€é«˜åŠæœ€ä½åˆ†):");
 			ch = Integer.parseInt(buf.readLine());
 			switch(ch){
 				case 1:
-					System.out.println("¾Ç¥Í\t¥­®É\t´Á¤¤\t´Á¥½\t¾Ç´Á");
+					System.out.println("å­¸ç”Ÿ\tå¹³æ™‚\tæœŸä¸­\tæœŸæœ«\tå­¸æœŸ");
 					for(i=0; i<num; i++){
 						System.out.println((i+1)+"\t"+usually[i]+"\t"+mid[i]+"\t"+fin[i]+"\t"+end[i]);
 					}
 					break;
 				case 2:
-					System.out.println("¾Ç¥Í\t¾Ç´Á");
+					System.out.println("å­¸ç”Ÿ\tå­¸æœŸ");
 					for(i=0; i<num; i++){
 						if(end[i]<60)
 							System.out.println(num+"\t"+end[i]);
@@ -71,38 +71,38 @@ public class HW23{
 					}
 					break;
 				case 4:
-					System.out.print("½Ğ¿é¤J§A­nªº¾Ç¥Í:");
+					System.out.print("è«‹è¼¸å…¥ä½ è¦çš„å­¸ç”Ÿ:");
 					choice = Integer.parseInt(buf.readLine())-1;
 					System.out.println((choice+1)+"\t"+usually[choice]+"\t"+mid[choice]+"\t"+fin[choice]+"\t"+end[choice]);
 					break;
 				case 5:
-					System.out.print("½Ğ¿ï¾Ü¦C¥X­ş¤@ºØ¦¨ÁZªº³Ì°ª¤Î³Ì§C¤À:(a¡G¥­®É¦¨ÁZ¡Bb¡G´Á¤¤¦¨ÁZ¡Bc¡G´Á¥½¦¨ÁZ¡Bd¡G¾Ç´Á¦¨ÁZ)");
+					System.out.print("è«‹é¸æ“‡åˆ—å‡ºå“ªä¸€ç¨®æˆç¸¾çš„æœ€é«˜åŠæœ€ä½åˆ†:(aï¼šå¹³æ™‚æˆç¸¾ã€bï¼šæœŸä¸­æˆç¸¾ã€cï¼šæœŸæœ«æˆç¸¾ã€dï¼šå­¸æœŸæˆç¸¾)");
 					choice1 = buf.readLine().charAt(0);
 					switch(choice1){
 						case 'a':
-							System.out.println("¥­®É¦¨ÁZ³Ì°ª¤À¡G" + usually[usually_max] + ", ³Ì§C¤À¡G" + usually[usually_min]);
+							System.out.println("å¹³æ™‚æˆç¸¾æœ€é«˜åˆ†ï¼š" + usually[usually_max] + ", æœ€ä½åˆ†ï¼š" + usually[usually_min]);
 							break;
 						case 'b':
-							System.out.println("´Á¤¤¦¨ÁZ³Ì°ª¤À¡G" + mid[mid_max] + ", ³Ì§C¤À¡G" + mid[mid_min]);
+							System.out.println("æœŸä¸­æˆç¸¾æœ€é«˜åˆ†ï¼š" + mid[mid_max] + ", æœ€ä½åˆ†ï¼š" + mid[mid_min]);
 							break;
 						case 'c':
-							System.out.println("´Á¥½¦¨ÁZ³Ì°ª¤À¡G" + fin[fin_max] + ", ³Ì§C¤À¡G" + fin[fin_min]);
+							System.out.println("æœŸæœ«æˆç¸¾æœ€é«˜åˆ†ï¼š" + fin[fin_max] + ", æœ€ä½åˆ†ï¼š" + fin[fin_min]);
 							break;
 						case 'd':
-							System.out.println("¾Ç´Á¦¨ÁZ³Ì°ª¤À¡G" + end[end_max] + ", ³Ì§C¤À¡G" + end[end_min]);
+							System.out.println("å­¸æœŸæˆç¸¾æœ€é«˜åˆ†ï¼š" + end[end_max] + ", æœ€ä½åˆ†ï¼š" + end[end_min]);
 							break;
 						default:
-							System.out.println("µL¦¹¥\¯à¡I");
+							System.out.println("ç„¡æ­¤åŠŸèƒ½ï¼");
 							break;
 					}
 					break;
 				default:
-					System.out.println("µL¦¹¥\¯à¡I");
+					System.out.println("ç„¡æ­¤åŠŸèƒ½ï¼");
 					break;
 			}
-			System.out.print("¬O§_Ä~Äò¾Ş§@(Y/N):");
+			System.out.print("æ˜¯å¦ç¹¼çºŒæ“ä½œ(Y/N):");
 			ans = buf.readLine().charAt(0);
 		}while(ans == 'Y');
-		System.out.println("µ²§ôµ{¦¡");
+		System.out.println("çµæŸç¨‹å¼");
 	}
 }

@@ -1,113 +1,113 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app{
 	public static void main(String[] args)throws  IOException{
 		BufferedReader buf;
 		buf = new BufferedReader(new InputStreamReader(System.in));
 		int mouth, date;
-		System.out.print("½Ğ¿é¤J¤ë¥÷¡G");
+		System.out.print("è«‹è¼¸å…¥æœˆä»½ï¼š");
 		mouth = Integer.parseInt(buf.readLine());
-		System.out.print("½Ğ¿é¤J¤é´Á¡G");
+		System.out.print("è«‹è¼¸å…¥æ—¥æœŸï¼š");
 		date = Integer.parseInt(buf.readLine());
 
 		switch(mouth){
 			case 1:
 				if(date > 31 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G¼¯½~®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šæ‘©ç¾¯åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡G¤ô²~®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šæ°´ç“¶åº§");
 				break;
 			case 2:
 				if(date > 28 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G¤ô²~®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šæ°´ç“¶åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡GÂù³½®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šé›™é­šåº§");
 				break;
 			case 3:
 				if(date > 31 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡GÂù³½®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šé›™é­šåº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡G¨d¦Ï®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šç‰¡ç¾Šåº§");
 				break;
 			case 4:
 				if(date > 30 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G¨d¦Ï®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šç‰¡ç¾Šåº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡Gª÷¤û®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šé‡‘ç‰›åº§");
 				break;
 			case 5:
 				if(date > 31 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡Gª÷¤û®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šé‡‘ç‰›åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡GÂù¤l®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šé›™å­åº§");
 				break;
 			case 6:
 				if(date > 30 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡GÂù¤l®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šé›™å­åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡G¥¨ÃÉ®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šå·¨èŸ¹åº§");
 				break;
 			case 7:
 				if(date > 31 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G¥¨ÃÉ®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šå·¨èŸ¹åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡G·à¤l®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šç…å­åº§");
 				break;
 			case 8:
 				if(date > 31 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G·à¤l®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šç…å­åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡G³B¤k®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šè™•å¥³åº§");
 				break;
 			case 9:
 				if(date > 30 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G³B¤k®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šè™•å¥³åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡G¤Ñ¯¯®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šå¤©ç§¤åº§");
 				break;
 			case 10:
 				if(date > 31 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G¤Ñ¯¯®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šå¤©ç§¤åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡G¤ÑÃÈ®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šå¤©è åº§");
 				break;
 			case 11:
 				if(date > 30 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G¤ÑÃÈ®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šå¤©è åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡G®g¤â®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šå°„æ‰‹åº§");
 				break;
 			case 12:
 				if(date > 31 || date < 1)
-					System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+					System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				else if(date < 21)
-					System.out.print("±zªº¬P®y¬°¡G®g¤â®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šå°„æ‰‹åº§");
 				else
-					System.out.print("±zªº¬P®y¬°¡GÅ]½~®y");
+					System.out.print("æ‚¨çš„æ˜Ÿåº§ç‚ºï¼šé­”ç¾¯åº§");
 				break;
 			default:	
-				System.out.print("½Ğ¿é¤J¥¿½Tªº¤é´Á");
+				System.out.print("è«‹è¼¸å…¥æ­£ç¢ºçš„æ—¥æœŸ");
 				break;
 		}
 	}

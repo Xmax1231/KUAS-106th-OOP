@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class HW26{
 	public static int fac(int n){
 		if(n==1)
@@ -11,8 +11,8 @@ public class HW26{
 	public static void main(String[] argv) throws IOException{
 		BufferedReader buf;
 		buf = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("½Ğ¿é¤JÅÜ§Î¶O¤ó¼Æ¦Cªº²Ä´X¶µ¡G ");		
+		System.out.print("è«‹è¼¸å…¥è®Šå½¢è²»æ°æ•¸åˆ—çš„ç¬¬å¹¾é …ï¼š ");		
 		int n = Integer.parseInt(buf.readLine());
-		System.out.println("²Ä"+n+"¶µ¶O¤ó¼Æ¦Cªº­È¬°¡G "+fac(n));
+		System.out.println("ç¬¬"+n+"é …è²»æ°æ•¸åˆ—çš„å€¼ç‚ºï¼š "+fac(n));
 	}
 }

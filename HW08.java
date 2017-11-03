@@ -1,16 +1,16 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app1 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 		int year;
-		System.out.print("½Ğ¿é¤J¦è¤¸¦~¥÷¡G");
+		System.out.print("è«‹è¼¸å…¥è¥¿å…ƒå¹´ä»½ï¼š");
 		year = Integer.parseInt(buf.readLine());
 		if((year % 4 == 0) & ((year % 100 != 0) | (year % 400 == 0))){
-			System.out.print("¦è¤¸" + year);
-			System.out.print("¦~¬O¶|¦~");
+			System.out.print("è¥¿å…ƒ" + year);
+			System.out.print("å¹´æ˜¯é–å¹´");
 		}else{
-			System.out.print("¦è¤¸" + year);
-			System.out.print("¦~¤£¬O¶|¦~");
+			System.out.print("è¥¿å…ƒ" + year);
+			System.out.print("å¹´ä¸æ˜¯é–å¹´");
 		}
 	}
 }

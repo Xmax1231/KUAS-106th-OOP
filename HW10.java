@@ -1,10 +1,10 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app1 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 		int sec,s,m,h,d;
 
-		System.out.print("½Ð¿é¤J¬í¼Æ¡G");
+		System.out.print("è«‹è¼¸å…¥ç§’æ•¸ï¼š");
 		sec = Integer.parseInt(buf.readLine());
 
 		d = sec / 86400;
@@ -14,14 +14,14 @@ public class app1 {
 		m = sec / 60;
 		sec -= m * 60;
 
-		System.out.print("¦@¸g¹L¤F¡G");
+		System.out.print("å…±ç¶“éŽäº†ï¼š");
 		if(d > 0)
-			System.out.print(d + " ¤Ñ ");
+			System.out.print(d + " å¤© ");
 		if(h > 0)
-			System.out.print(h + " ¤p®É ");
+			System.out.print(h + " å°æ™‚ ");
 		if(m > 0)
-			System.out.print(m + " ¤ÀÄÁ ");
+			System.out.print(m + " åˆ†é˜ ");
 		if(sec > 0)
-			System.out.print(sec + " ¬í");
+			System.out.print(sec + " ç§’");
 	}
 }

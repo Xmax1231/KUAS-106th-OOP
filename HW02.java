@@ -1,10 +1,10 @@
-public class App1 {
+ï»¿public class App1 {
     public static void main(String[] args) {
-        String name = "¤p¹Å";
+        String name = "å°å˜‰";
         int tea = 33;
         int juice = 21;
         int price = tea * 25 + juice * 50;
 
-	System.out.println("©m¦W¡G"+name+"\nÁÊ¶R¯ù¶¼ªM¼Æ¡G"+tea+"\nÁÊ¶RªG¥ÄªM¼Æ¡G"+juice+"\nÁ`»ù¡G"+price);
+	System.out.println("å§“åï¼š"+name+"\nè³¼è²·èŒ¶é£²æ¯æ•¸ï¼š"+tea+"\nè³¼è²·æœæ±æ¯æ•¸ï¼š"+juice+"\nç¸½åƒ¹ï¼š"+price);
     }
 }

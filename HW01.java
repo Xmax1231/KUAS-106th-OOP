@@ -1,6 +1,6 @@
-public class App1 {
+ï»¿public class App1 {
   public static void main(String[] args){
-    System.out.println("©m¦W¡G¼B¬F¿o\n©Ê§O¡G¨k");
-    System.out.println("¥X¥Í¦~¤ë¤é¡G1997/12/31\n¾Ç¸¹¡G1105108134");
+    System.out.println("å§“åï¼šåŠ‰æ”¿ç©\næ€§åˆ¥ï¼šç”·");
+    System.out.println("å‡ºç”Ÿå¹´æœˆæ—¥ï¼š1997/12/31\nå­¸è™Ÿï¼š1105108134");
   }
 }

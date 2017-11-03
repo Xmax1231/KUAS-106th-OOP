@@ -1,18 +1,18 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app{
 	public static void main(String[] args)throws  IOException{
 		BufferedReader buf;
 		buf = new BufferedReader(new InputStreamReader(System.in));
 		int min, max, base;
-		System.out.print("½Ğ¿é¤J½d³òªº³Ì¤p¼Æ¡G");
+		System.out.print("è«‹è¼¸å…¥ç¯„åœçš„æœ€å°æ•¸ï¼š");
 		min = Integer.parseInt(buf.readLine());
-		System.out.print("½Ğ¿é¤J½d³òªº³Ì¤j¼Æ¡G");
+		System.out.print("è«‹è¼¸å…¥ç¯„åœçš„æœ€å¤§æ•¸ï¼š");
 		max = Integer.parseInt(buf.readLine());
-		System.out.print("½Ğ¿é¤J­n´M§äªº­¿¼Æªº°ò­È¡G");
+		System.out.print("è«‹è¼¸å…¥è¦å°‹æ‰¾çš„å€æ•¸çš„åŸºå€¼ï¼š");
 		base = Integer.parseInt(buf.readLine());
 
 		int n;
-		System.out.print(base + " ªº­¿¼Æ¬°¡G");
+		System.out.print(base + " çš„å€æ•¸ç‚ºï¼š");
 		for(n = min ;n <= max ; n++){
 			if((n % base)==0){
 				System.out.print(n + " ");

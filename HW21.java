@@ -1,31 +1,31 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class HW21{
 	public static void main(String[] args) throws IOException{
 		int i, InIn;
 		int code[] = {153, 198, 211, 286, 384, 426, 999};
-		String position[] = {"A°Ï", "C°Ï", "E°Ï", "F°Ï", "G°Ï", "H°Ï", "Z°Ï"};
+		String position[] = {"Aå€", "Cå€", "Eå€", "Få€", "Gå€", "Hå€", "Zå€"};
 		BufferedReader buf;
 		buf = new BufferedReader(new InputStreamReader(System.in));
 		char ans = 0;
-		System.out.print("°Ó«~½s¸¹¡G");
+		System.out.print("å•†å“ç·¨è™Ÿï¼š");
 		for(i=0; i<(code.length-1); i++){
 			System.out.print(code[i] + ", ");
 		}
 		System.out.print(code[i] + "\n");
 		do{
-			System.out.print("½Ğ¿é¤J­n¬d¸ß¦ì¸mªº°Ó«~½s¸¹¡G");
+			System.out.print("è«‹è¼¸å…¥è¦æŸ¥è©¢ä½ç½®çš„å•†å“ç·¨è™Ÿï¼š");
 			InIn = Integer.parseInt(buf.readLine());
 			for(i=0; i<code.length; i++){
 				if(InIn == code[i]){
-					System.out.println("°Ó«~¦ì¸m¦b" + position[i]);
+					System.out.println("å•†å“ä½ç½®åœ¨" + position[i]);
 					break;
 				}
 			}
 			if(i == code.length)
-				System.out.println("¬dµL¦¹½s¸¹");
-			System.out.print("½Ğ°İ¬O§_Ä~Äò¬d¸ß?(Y/N)¡G");
+				System.out.println("æŸ¥ç„¡æ­¤ç·¨è™Ÿ");
+			System.out.print("è«‹å•æ˜¯å¦ç¹¼çºŒæŸ¥è©¢?(Y/N)ï¼š");
 			ans = buf.readLine().charAt(0);
 		}while(ans == 'Y');
-		System.out.println("µ{¦¡µ²§ô");
+		System.out.println("ç¨‹å¼çµæŸ");
 		}
 }

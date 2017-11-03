@@ -1,23 +1,23 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app1 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 		int attack, damage;
 		double buff;
-		System.out.print("¿é¤J§ğÀ»¼Æ­È¡G");
+		System.out.print("è¼¸å…¥æ”»æ“Šæ•¸å€¼ï¼š");
 		attack = Integer.parseInt(buf.readLine());
-		System.out.print("¿é¤J¼W¯q­È¡G");
+		System.out.print("è¼¸å…¥å¢ç›Šå€¼ï¼š");
 		buff = Double.parseDouble(buf.readLine());
 		System.out.println("");
 		
 		damage = (int)(attack * buff);
-		System.out.println("¼W¯q³y¦¨¶Ë®`­È¡G" + damage);
+		System.out.println("å¢ç›Šé€ æˆå‚·å®³å€¼ï¼š" + damage);
 		if(damage == 2147483647 & (attack != 1 | buff != 1)){
-			System.out.println("¼W¯q¹Bºâµ²ªG¡G¡uoverflow¡v");
+			System.out.println("å¢ç›Šé‹ç®—çµæœï¼šã€Œoverflowã€");
 		}else if(damage == 0 & (attack != 1 | buff != 1)){
-			System.out.println("¼W¯q¹Bºâµ²ªG¡G¡uunderflow¡v");			
+			System.out.println("å¢ç›Šé‹ç®—çµæœï¼šã€Œunderflowã€");			
 		}else{
-			System.out.println("¼W¯q¹Bºâµ²ªG¡G¡u¥¿±`¡v");
+			System.out.println("å¢ç›Šé‹ç®—çµæœï¼šã€Œæ­£å¸¸ã€");
 		}
 	}
 }

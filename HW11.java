@@ -1,24 +1,24 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app1 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 		int score;
 
-		System.out.print("½Ð¿é¤J TOEIC¡G");
+		System.out.print("è«‹è¼¸å…¥ TOEICï¼š");
 		score = Integer.parseInt(buf.readLine());
 
 		if(score % 5 != 0 | (score > 990 | score < 10)){
-			System.out.print("¿é¤J®æ¦¡¿ù»~¡C");
+			System.out.print("è¼¸å…¥æ ¼å¼éŒ¯èª¤ã€‚");
 		}else if(score >=10 & score <= 215){
-			System.out.print("ÃÒ·ÓÃC¦â¡G¾ï¦â");
+			System.out.print("è­‰ç…§é¡è‰²ï¼šæ©˜è‰²");
 		}else if(score >=220 & score <= 465){
-			System.out.print("ÃÒ·ÓÃC¦â¡G´Ä¦â");
+			System.out.print("è­‰ç…§é¡è‰²ï¼šæ£•è‰²");
 		}else if(score >=470 & score <= 725){
-			System.out.print("ÃÒ·ÓÃC¦â¡Gºñ¦â");
+			System.out.print("è­‰ç…§é¡è‰²ï¼šç¶ è‰²");
 		}else if(score >=730 & score <= 855){
-			System.out.print("ÃÒ·ÓÃC¦â¡GÂÅ¦â");
+			System.out.print("è­‰ç…§é¡è‰²ï¼šè—è‰²");
 		}else if(score >=860 & score <= 990){
-			System.out.print("ÃÒ·ÓÃC¦â¡Gª÷¦â");
+			System.out.print("è­‰ç…§é¡è‰²ï¼šé‡‘è‰²");
 		}
 	}
 }

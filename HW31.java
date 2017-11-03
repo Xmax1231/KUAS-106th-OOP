@@ -1,28 +1,28 @@
-/*
- * 2017/11/01 ²Ä¤K©P§@·~-¹ê²ß2
+ï»¿/*
+ * 2017/11/01 ç¬¬å…«å‘¨ä½œæ¥­-å¯¦ç¿’2
  * HW31.java
  */
 import java.io.*;
 public class HW31{
 	static void calArea(int r){
-		System.out.println("³o¬O¤@­Ó¶ê§Î¡A­±¿n¬°¡G" + (r*r*3.14));
+		System.out.println("é€™æ˜¯ä¸€å€‹åœ“å½¢ï¼Œé¢ç©ç‚ºï¼š" + (r*r*3.14));
 	}
 	static void calArea(int x, int y){
-		System.out.println("³o¬O¤@­Ó¯x§Î¡A­±¿n¬°¡G" + (x*y));
+		System.out.println("é€™æ˜¯ä¸€å€‹çŸ©å½¢ï¼Œé¢ç©ç‚ºï¼š" + (x*y));
 	}
 	static void calArea(int a, int b, int c){
 		int max = Math.max(Math.max(a,b),c);
 		int min = Math.min(Math.min(a,b),c);
 		int mid = a+b+c-max-min;
 		if(Math.pow(max,2) == (Math.pow(min,2)+Math.pow(mid,2))){
-			System.out.println("³o¬O¤@­Óª½¨¤¤T¨¤§Î¡A­±¿n¬°¡G"+(min*mid/2));
+			System.out.println("é€™æ˜¯ä¸€å€‹ç›´è§’ä¸‰è§’å½¢ï¼Œé¢ç©ç‚ºï¼š"+(min*mid/2));
 		}else{
-			System.out.println("«Ü©êºp±z¿é¤Jªº¤£¬Oª½¨¤¤T§Î¡A§ÚµLªkÀ°§A­pºâ­±¿n¡C");
+			System.out.println("å¾ˆæŠ±æ­‰æ‚¨è¼¸å…¥çš„ä¸æ˜¯ç›´è§’ä¸‰å½¢ï¼Œæˆ‘ç„¡æ³•å¹«ä½ è¨ˆç®—é¢ç©ã€‚");
 		}
 	}
 	public static void main(String[] args)throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("½Ğ¿é¤J¼Æ­È¡G");
+		System.out.print("è«‹è¼¸å…¥æ•¸å€¼ï¼š");
 		String inp[] = buf.readLine().split(",");
 		// System.out.println(inp.length);
 		switch(inp.length){
@@ -36,7 +36,7 @@ public class HW31{
 				calArea(Integer.parseInt(inp[0]),Integer.parseInt(inp[1]),Integer.parseInt(inp[2]));
 				break;
 			default:
-				System.out.println("¶È¥u¯à¿é¤J¦Ü¤Ö¤@­Ó©M¤T­Ó¥H¤ºªº­È");
+				System.out.println("åƒ…åªèƒ½è¼¸å…¥è‡³å°‘ä¸€å€‹å’Œä¸‰å€‹ä»¥å…§çš„å€¼");
 				break;
 		}
 	}

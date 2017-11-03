@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app{
 	public static void main(String[] args)throws  IOException{
 		BufferedReader buf;
@@ -6,38 +6,38 @@ public class app{
 		int mode, total, inin, temp;
 		total = 0;
 		do{
-			System.out.print("½Ğ¿ï¾Ü¥\¯à¡]1.´£´Ú¡B2.¦s´Ú¡B3.¬d¸ß¾lÃB¡B4.Â÷¶}¡^¡G");
+			System.out.print("è«‹é¸æ“‡åŠŸèƒ½ï¼ˆ1.ææ¬¾ã€2.å­˜æ¬¾ã€3.æŸ¥è©¢é¤˜é¡ã€4.é›¢é–‹ï¼‰ï¼š");
 			mode = Integer.parseInt(buf.readLine());
 			switch(mode){
 				case 1:
-					System.out.print("½Ğ¿é¤J´£´Úª÷ÃB¡G");
+					System.out.print("è«‹è¼¸å…¥ææ¬¾é‡‘é¡ï¼š");
 					inin = Integer.parseInt(buf.readLine());
 					if(inin > total)
-						System.out.println("ª÷ÃB¤£¨¬¡A¥Ø«e¾lÃB¡G" + total);
+						System.out.println("é‡‘é¡ä¸è¶³ï¼Œç›®å‰é¤˜é¡ï¼š" + total);
 					else{
 						total -= inin;
-						System.out.println("´£´Ú¦¨¥\¡A¥Ø«e¾lÃB¡G" + total);
+						System.out.println("ææ¬¾æˆåŠŸï¼Œç›®å‰é¤˜é¡ï¼š" + total);
 					}
 					break;
 				case 2:
-					System.out.print("½Ğ¿é¤J¦s´Úª÷ÃB¡G");
+					System.out.print("è«‹è¼¸å…¥å­˜æ¬¾é‡‘é¡ï¼š");
 					inin = Integer.parseInt(buf.readLine());
 					temp = total + inin;
 					if (temp < 0 )
-						System.out.println("¦s´Ú¥¢±Ñ¡AÁ`­È¶W¹L¸ê®Æ«¬ºA¤W­­¡A¥Ø«e³Ñ¾l¡G" + total);
+						System.out.println("å­˜æ¬¾å¤±æ•—ï¼Œç¸½å€¼è¶…éè³‡æ–™å‹æ…‹ä¸Šé™ï¼Œç›®å‰å‰©é¤˜ï¼š" + total);
 					else{	
 						total = temp;
-						System.out.println("¦s´Ú¦¨¥\¡A¥Ø«e¾lÃB¡G" + total);
+						System.out.println("å­˜æ¬¾æˆåŠŸï¼Œç›®å‰é¤˜é¡ï¼š" + total);
 					}
 					break;
 				case 3:
-					System.out.println("¥Ø«e¾lÃB¡G" + total);
+					System.out.println("ç›®å‰é¤˜é¡ï¼š" + total);
 					break;
 				case 4:
-					System.out.println("·PÁÂ±zªº¨Ï¥Î¡AÅwªï¤U¦¸ªº¥úÁ{¡C");
+					System.out.println("æ„Ÿè¬æ‚¨çš„ä½¿ç”¨ï¼Œæ­¡è¿ä¸‹æ¬¡çš„å…‰è‡¨ã€‚");
 					break;
 				default:
-					System.out.println("¿é¤J¿ù»~¡A¨S¦³¦¹¥\¯à¡A½Ğ­«·s¿é¤J¡C");
+					System.out.println("è¼¸å…¥éŒ¯èª¤ï¼Œæ²’æœ‰æ­¤åŠŸèƒ½ï¼Œè«‹é‡æ–°è¼¸å…¥ã€‚");
 					break;
 			}
 		}while(mode != 4);

@@ -1,18 +1,18 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app{
 	public static void main(String[] args)throws  IOException{
 		BufferedReader buf;
 		buf = new BufferedReader(new InputStreamReader(System.in));
 		int x;
 		do{
-			System.out.print("¿é¤J­·³tµ¥¯Å¡G");
+			System.out.print("è¼¸å…¥é¢¨é€Ÿç­‰ç´šï¼š");
 			x = Integer.parseInt(buf.readLine());
 		}while((x < 8) || (x > 17));
 		if((x>=8) && (x<=11))
-			System.out.print("­·³tµ¥¯Å" + x + "¬°¡G»´«×»ä­·");
+			System.out.print("é¢¨é€Ÿç­‰ç´š" + x + "ç‚ºï¼šè¼•åº¦é¢±é¢¨");
 		else if((x>=12) && (x<=15))
-			System.out.print("­·³tµ¥¯Å" + x + "¬°¡G¤¤«×»ä­·");
+			System.out.print("é¢¨é€Ÿç­‰ç´š" + x + "ç‚ºï¼šä¸­åº¦é¢±é¢¨");
 		else if((x>=16) && (x<=17))
-			System.out.print("­·³tµ¥¯Å" + x + "¬°¡G±j¯P»ä­·");
+			System.out.print("é¢¨é€Ÿç­‰ç´š" + x + "ç‚ºï¼šå¼·çƒˆé¢±é¢¨");
 	}
 }

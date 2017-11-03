@@ -1,32 +1,32 @@
-import java.io.*;
+ï»¿import java.io.*;
 import java.util.Date;
 public class HW32{
 	public static void main(String[] args)throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("½Ğ¿é¤J­n¬d¸ßªº«°¥«¡G");
+		System.out.print("è«‹è¼¸å…¥è¦æŸ¥è©¢çš„åŸå¸‚ï¼š");
 		String inp = buf.readLine();
 		Date dt = new Date();
 		switch(inp){
-			case "ÂÂª÷¤s":
-				System.out.println(inp+"²{¦b®É¶¡¡G"+((dt.getHours()-8-8)<0?dt.getHours()-8-8+24:dt.getHours()-8-8)+":"+dt.getMinutes()+":"+dt.getSeconds());
+			case "èˆŠé‡‘å±±":
+				System.out.println(inp+"ç¾åœ¨æ™‚é–“ï¼š"+((dt.getHours()-8-8)<0?dt.getHours()-8-8+24:dt.getHours()-8-8)+":"+dt.getMinutes()+":"+dt.getSeconds());
 				break;
-			case "­Û´°":
-				System.out.println(inp+"²{¦b®É¶¡¡G"+(dt.getHours()-8+0)+":"+dt.getMinutes()+":"+dt.getSeconds());
+			case "å€«æ•¦":
+				System.out.println(inp+"ç¾åœ¨æ™‚é–“ï¼š"+(dt.getHours()-8+0)+":"+dt.getMinutes()+":"+dt.getSeconds());
 				break;
-			case "¤Ú¾¤":
-				System.out.println(inp+"²{¦b®É¶¡¡G"+(dt.getHours()-8+1)+":"+dt.getMinutes()+":"+dt.getSeconds());
+			case "å·´é»":
+				System.out.println(inp+"ç¾åœ¨æ™‚é–“ï¼š"+(dt.getHours()-8+1)+":"+dt.getMinutes()+":"+dt.getSeconds());
 				break;
-			case "°Ò¨¦":
-				System.out.println(inp+"²{¦b®É¶¡¡G"+(dt.getHours()-8+7)+":"+dt.getMinutes()+":"+dt.getSeconds());
+			case "æ›¼è°·":
+				System.out.println(inp+"ç¾åœ¨æ™‚é–“ï¼š"+(dt.getHours()-8+7)+":"+dt.getMinutes()+":"+dt.getSeconds());
 				break;
-			case "¥xÆW":
-				System.out.println(inp+"²{¦b®É¶¡¡G"+(dt.getHours()-8+8)+":"+dt.getMinutes()+":"+dt.getSeconds());
+			case "å°ç£":
+				System.out.println(inp+"ç¾åœ¨æ™‚é–“ï¼š"+(dt.getHours()-8+8)+":"+dt.getMinutes()+":"+dt.getSeconds());
 				break;
-			case "ªF¨Ê":
-				System.out.println(inp+"²{¦b®É¶¡¡G"+(dt.getHours()-8+9)+":"+dt.getMinutes()+":"+dt.getSeconds());
+			case "æ±äº¬":
+				System.out.println(inp+"ç¾åœ¨æ™‚é–“ï¼š"+(dt.getHours()-8+9)+":"+dt.getMinutes()+":"+dt.getSeconds());
 				break;
-			case "³·±ù":
-				System.out.println(inp+"²{¦b®É¶¡¡G"+(dt.getHours()-8+11)+":"+dt.getMinutes()+":"+dt.getSeconds());
+			case "é›ªæ¢¨":
+				System.out.println(inp+"ç¾åœ¨æ™‚é–“ï¼š"+(dt.getHours()-8+11)+":"+dt.getMinutes()+":"+dt.getSeconds());
 				break;
 		}
 		// System.out.println(dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds());

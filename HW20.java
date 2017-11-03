@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class HW20{
 	public static void main(String[] argv)throws IOException{
 		BufferedReader buf;
@@ -9,14 +9,14 @@ public class HW20{
 		high = low = -1;
 		buf = new BufferedReader(new InputStreamReader(System.in));
 		// input num
-		System.out.print("½Ğ¿é¤J¾Ç¥Í¤H¼Æ¡G");
+		System.out.print("è«‹è¼¸å…¥å­¸ç”Ÿäººæ•¸ï¼š");
 		int num = Integer.parseInt(buf.readLine());
 		int score[] = new int[num];
 		// start
 		System.out.println("-----------------------------");
-		System.out.println("¶}©l¿é¤J¾Ç¥Í¦¨ÁZ");
+		System.out.println("é–‹å§‹è¼¸å…¥å­¸ç”Ÿæˆç¸¾");
 		for(i=0; i<num; i++){
-			System.out.print("½Ğ¿é¤J²Ä" + (i+1) + "¦ì¾Ç¥Í¦¨ÁZ¡G");
+			System.out.print("è«‹è¼¸å…¥ç¬¬" + (i+1) + "ä½å­¸ç”Ÿæˆç¸¾ï¼š");
 			score[i] = Integer.parseInt(buf.readLine());
 			if(score[i]<60)
 				failed++;
@@ -26,7 +26,7 @@ public class HW20{
 				low = score[i];
 		}
 		// ouput
-		System.out.println("¦¨ÁZ²Î­pµ²ªG¦p¤U¡G");
-		System.out.println("¦@¦³" + num + "¦ì¾Ç¥Í¡A" + failed + "¤H¤£¤Î®æ¡A" + (num - failed) + "¤H¤Î®æ¡A³Ì°ª¤À¬°" + high + " ¡A³Ì§C¤À¬°" + low);
+		System.out.println("æˆç¸¾çµ±è¨ˆçµæœå¦‚ä¸‹ï¼š");
+		System.out.println("å…±æœ‰" + num + "ä½å­¸ç”Ÿï¼Œ" + failed + "äººä¸åŠæ ¼ï¼Œ" + (num - failed) + "äººåŠæ ¼ï¼Œæœ€é«˜åˆ†ç‚º" + high + " ï¼Œæœ€ä½åˆ†ç‚º" + low);
 	}
 }

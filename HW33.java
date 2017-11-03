@@ -1,7 +1,7 @@
-/*
- * 2017/11/01 ²Ä¤K©P§@·~-¹ê²ß4
+ï»¿/*
+ * 2017/11/01 ç¬¬å…«å‘¨ä½œæ¥­-å¯¦ç¿’4
  * HW33.java
- * ¤õÁç «K·í Âû±Æ ©ÔÄÑ ¦×Ã¼ ¤¦¤¦º~³ù º±¨ı
+ * ç«é‹ ä¾¿ç•¶ é›æ’ æ‹‰éºµ è‚‰ç¾¹ ä¸¹ä¸¹æ¼¢å ¡ æ»·å‘³
  * 130 75 80 110 55 93 100
  */
 import java.io.*;
@@ -25,12 +25,12 @@ public class HW33{
 	}
 	public static void main(String[] args)throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("½Ğ¿é¤Jµæ³æ¡G");
+		System.out.print("è«‹è¼¸å…¥èœå–®ï¼š");
 		String menu[] = buf.readLine().split(" ");
-		System.out.print("½Ğ¿é¤J»ù¿ú¡G");
+		System.out.print("è«‹è¼¸å…¥åƒ¹éŒ¢ï¼š");
 		String money[] = buf.readLine().split(" ");
 		// ----------------------------------------------------
-		// ¶Ã¼Æºâ¥X¤@¶gªº­¹ª«index
+		// äº‚æ•¸ç®—å‡ºä¸€é€±çš„é£Ÿç‰©index
 		boolean flag = true;
 		int week[] = new int[7], i, r, n=0;
 		do{
@@ -58,30 +58,30 @@ public class HW33{
 			today = 6;
 		else
 			today -= 1;
-		// ½Õ¾ã¬°¬P´Á¤@¬°0 ~ ¬P´Á¤é¬°6
+		// èª¿æ•´ç‚ºæ˜ŸæœŸä¸€ç‚º0 ~ æ˜ŸæœŸæ—¥ç‚º6
 		do{
-			System.out.print("½Ğ¿ï¾Ü¥\¯à(1.·í¤Ñ­n¦Y¤°»ò 2.»ù®æ±Æ§Ç 3.¦C¥X¤@©Pµæ³æ 4.Â÷¶}µ{¦¡)¡G");
+			System.out.print("è«‹é¸æ“‡åŠŸèƒ½(1.ç•¶å¤©è¦åƒä»€éº¼ 2.åƒ¹æ ¼æ’åº 3.åˆ—å‡ºä¸€å‘¨èœå–® 4.é›¢é–‹ç¨‹å¼)ï¼š");
 			choice = Integer.parseInt(buf.readLine());
 			switch(choice){
 				case 1:
-					System.out.println("¤µ¤Ñ¬P´Á"+(today+1)+"¡A§Ú­n¦Y"+menu[week[today]-1]+"¡A»ù®æ"+money[week[today]-1]+"¤¸");
+					System.out.println("ä»Šå¤©æ˜ŸæœŸ"+(today+1)+"ï¼Œæˆ‘è¦åƒ"+menu[week[today]-1]+"ï¼Œåƒ¹æ ¼"+money[week[today]-1]+"å…ƒ");
 					break;
 				case 2:
 					for(i=0; i<6; i++){
-						System.out.print(menu[i]+money[i]+"¤¸¡B");
+						System.out.print(menu[i]+money[i]+"å…ƒã€");
 					}					
-					System.out.print(menu[6]+money[6]+"¤¸\n");
+					System.out.print(menu[6]+money[6]+"å…ƒ\n");
 					break;
 				case 3:
 					for(i=0; i<7; i++){
-						System.out.println("¤µ¤Ñ¬P´Á"+(i+1)+"¡A§Ú­n¦Y"+menu[week[i]-1]+"¡A»ù®æ"+money[week[i]-1]+"¤¸");
+						System.out.println("ä»Šå¤©æ˜ŸæœŸ"+(i+1)+"ï¼Œæˆ‘è¦åƒ"+menu[week[i]-1]+"ï¼Œåƒ¹æ ¼"+money[week[i]-1]+"å…ƒ");
 					}
 					break;
 				case 4:
-					System.out.println("µ{¦¡µ²§ô");
+					System.out.println("ç¨‹å¼çµæŸ");
 					break;
 				default:
-					System.out.println("½Ğ¿é¤J 1~4 ªº¼Æ¦rÁä¡I");
+					System.out.println("è«‹è¼¸å…¥ 1~4 çš„æ•¸å­—éµï¼");
 					break;
 			}
 		}while(choice != 4);

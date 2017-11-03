@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class HW25{
 	public static double circle(double r){
 		return r*r*3.14;
@@ -13,9 +13,9 @@ public class HW25{
 		return (x1+x2)*y/2;
 	}
 	public static void main(String[] argv) throws IOException{
-		System.out.println("¶ê§Î­±¿n(r=2.5)¡G " + circle(2.5));
-		System.out.println("¥¿¤è§Î­±¿n(x=3)¡G " + square(3));
-		System.out.println("¯x§Î­±¿n(x=4, y=8)¡G " + rectangle(4,8));
-		System.out.println("±è§Î­±¿n(x1=5, x2=6, y=2)¡G " + trapezium(5,6,2));
+		System.out.println("åœ“å½¢é¢ç©(r=2.5)ï¼š " + circle(2.5));
+		System.out.println("æ­£æ–¹å½¢é¢ç©(x=3)ï¼š " + square(3));
+		System.out.println("çŸ©å½¢é¢ç©(x=4, y=8)ï¼š " + rectangle(4,8));
+		System.out.println("æ¢¯å½¢é¢ç©(x1=5, x2=6, y=2)ï¼š " + trapezium(5,6,2));
 	}
 }

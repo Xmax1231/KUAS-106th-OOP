@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app1 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
@@ -6,19 +6,19 @@ public class app1 {
 		int year;
 
 		//input--- 
-		System.out.print("½Ğ¿é¤J§Aªº©m¦W¡G");
+		System.out.print("è«‹è¼¸å…¥ä½ çš„å§“åï¼š");
 		name = buf.readLine();
-		System.out.print("½Ğ¿é¤J§Aªº©Ê§O¡G");
+		System.out.print("è«‹è¼¸å…¥ä½ çš„æ€§åˆ¥ï¼š");
 		sex = buf.readLine();
-		System.out.print("½Ğ¿é¤J§Aªº¦è¤¸¥X¥Í¦~¥÷¡G");
+		System.out.print("è«‹è¼¸å…¥ä½ çš„è¥¿å…ƒå‡ºç”Ÿå¹´ä»½ï¼š");
 		year = Integer.parseInt(buf.readLine());
-		System.out.print("½Ğ¿é¤J§Aªº¥X¥Í¦a¡G");
+		System.out.print("è«‹è¼¸å…¥ä½ çš„å‡ºç”Ÿåœ°ï¼š");
 		being = buf.readLine();
 		
 		//output--- 
-		System.out.println("©m¦W¡G" + name);
-		System.out.println("©Ê§O¡G" + sex);
-		System.out.println("¦è¤¸¥X¥Í¦~¥÷¡G" + year);
-		System.out.println("¥X¥Í¦a¡G" + being);
+		System.out.println("å§“åï¼š" + name);
+		System.out.println("æ€§åˆ¥ï¼š" + sex);
+		System.out.println("è¥¿å…ƒå‡ºç”Ÿå¹´ä»½ï¼š" + year);
+		System.out.println("å‡ºç”Ÿåœ°ï¼š" + being);
 	}
 }

@@ -1,24 +1,24 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app1 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 		int mooncake, price, cash;
 
 		//input--- 
-		System.out.print("¤ë»æ³æ»ù¬°¡G");
+		System.out.print("æœˆé¤…å–®åƒ¹ç‚ºï¼š");
 		mooncake = Integer.parseInt(buf.readLine());
-		System.out.print("½Ğ¿é¤J±ıÁÊ¶Rªº¤ë»æ¼Æ¶q¡G");
+		System.out.print("è«‹è¼¸å…¥æ¬²è³¼è²·çš„æœˆé¤…æ•¸é‡ï¼š");
 		price = Integer.parseInt(buf.readLine());
-		System.out.print("½Ğ¿é¤J¥I´Úª÷ÃB¡G");
+		System.out.print("è«‹è¼¸å…¥ä»˜æ¬¾é‡‘é¡ï¼š");
 		cash = Integer.parseInt(buf.readLine());
 		
 		//output--- 
 		if(mooncake * price > cash){
-			System.out.print("¥I´Úª÷ÃB¤£¨¬");
+			System.out.print("ä»˜æ¬¾é‡‘é¡ä¸è¶³");
 		}else{
-			System.out.print("¹ê¥Iª÷ÃB¡G" + cash);
-			System.out.print("¡AÀ³¥Iª÷ÃB¡G" + mooncake * price);
-			System.out.print("¡A§ä¹s¡G" + (cash - mooncake * price));
+			System.out.print("å¯¦ä»˜é‡‘é¡ï¼š" + cash);
+			System.out.print("ï¼Œæ‡‰ä»˜é‡‘é¡ï¼š" + mooncake * price);
+			System.out.print("ï¼Œæ‰¾é›¶ï¼š" + (cash - mooncake * price));
 		}
 	}
 }

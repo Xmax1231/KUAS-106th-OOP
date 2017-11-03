@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class app{
 	public static void main(String[] args)throws  IOException{
 		BufferedReader buf;
@@ -23,8 +23,8 @@ public class app{
 						break;
 				}
 			}while(flag == 1);
-			System.out.println("ÂI¨ìªº¸¹½X¬°¡G" + r);
-			System.out.print("¬O§_Ä~ÄòÂI¦W¡]Y/N¡^¡G");
+			System.out.println("é»åˆ°çš„è™Ÿç¢¼ç‚ºï¼š" + r);
+			System.out.print("æ˜¯å¦ç¹¼çºŒé»åï¼ˆY/Nï¼‰ï¼š");
 			status = buf.readLine().charAt(0);
 		}while(status == 'Y');
 	}

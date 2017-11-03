@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class HW22{
 	public static int Rand(int start, int end){
 		return (int)( Math.random() * (end-start) ) + start;
@@ -18,9 +18,9 @@ public class HW22{
 				}
 			}while(flag == 1);
 		}
-		System.out.print("¼Ö³z¸¹½X¬°¡G");
+		System.out.print("æ¨‚é€è™Ÿç¢¼ç‚ºï¼š");
 		for(i=0; i<6-1; i++){
-			System.out.print(ans[i] + "¡B");
+			System.out.print(ans[i] + "ã€");
 		}
 		System.out.print(ans[i]);
 	}

@@ -1,23 +1,23 @@
-/*
- * 2017/11/01 ²Ä¤K©P§@·~-¹ê²ß1
+ï»¿/*
+ * 2017/11/01 ç¬¬å…«å‘¨ä½œæ¥­-å¯¦ç¿’1
  * HW30.java
  */
 import java.io.*;
 public class HW30{
 	static void calArea(int r){
-		System.out.println("³o¬O¤@­Ó¶ê§Î¡A­±¿n¬°¡G" + (r*r*3.14));
+		System.out.println("é€™æ˜¯ä¸€å€‹åœ“å½¢ï¼Œé¢ç©ç‚ºï¼š" + (r*r*3.14));
 	}
 	static void calArea(int x, int y){
-		System.out.println("³o¬O¤@­Ó¯x§Î¡A­±¿n¬°¡G" + (x*y));
+		System.out.println("é€™æ˜¯ä¸€å€‹çŸ©å½¢ï¼Œé¢ç©ç‚ºï¼š" + (x*y));
 	}
 	static void calArea(int a, int b, int c){
 		int max = Math.max(Math.max(a,b),c);
 		int min = Math.min(Math.min(a,b),c);
 		int mid = a+b+c-max-min;
 		if(Math.pow(max,2) == (Math.pow(min,2)+Math.pow(mid,2))){
-			System.out.println("³o¬O¤@­Óª½¨¤¤T¨¤§Î¡A­±¿n¬°¡G"+(min*mid/2));
+			System.out.println("é€™æ˜¯ä¸€å€‹ç›´è§’ä¸‰è§’å½¢ï¼Œé¢ç©ç‚ºï¼š"+(min*mid/2));
 		}else{
-			System.out.println("«Ü©êºp±z¿é¤Jªº¤£¬Oª½¨¤¤T§Î¡A§ÚµLªkÀ°§A­pºâ­±¿n¡C");
+			System.out.println("å¾ˆæŠ±æ­‰æ‚¨è¼¸å…¥çš„ä¸æ˜¯ç›´è§’ä¸‰å½¢ï¼Œæˆ‘ç„¡æ³•å¹«ä½ è¨ˆç®—é¢ç©ã€‚");
 		}
 	}
 	public static void main(String[] args)throws IOException{
@@ -26,7 +26,7 @@ public class HW30{
 		char ans = 'y';
 		do{
 			side++;
-			System.out.println("½Ğ¿é¤J²Ä "+side+" ­Ó¼Æ­È: ");
+			System.out.println("è«‹è¼¸å…¥ç¬¬ "+side+" å€‹æ•¸å€¼: ");
 			switch(side){
 				case 1:
 					a = Integer.parseInt(buf.readLine());
@@ -39,10 +39,10 @@ public class HW30{
 					break;
 			}
 			if(side==3)break;
-			System.out.print("½Ğ°İ¬O§_¦³²Ä"+(side+1)+"­Ó¼Æ­È­n¿é¤J?(y/n)¡G");
+			System.out.print("è«‹å•æ˜¯å¦æœ‰ç¬¬"+(side+1)+"å€‹æ•¸å€¼è¦è¼¸å…¥?(y/n)ï¼š");
 			ans = buf.readLine().charAt(0);
 		}while(ans == 'y');
-		//®Ú¾Ú¿é¤J´X­ÓÃä¥hµ¹Method­È
+		//æ ¹æ“šè¼¸å…¥å¹¾å€‹é‚Šå»çµ¦Methodå€¼
 		switch(side){
 			case 1:
 				calArea(a);

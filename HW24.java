@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 public class HW24{
 	public static int Rand(int start, int end){
 		return (int)( Math.random() * (end-start+1) ) + start;
@@ -7,7 +7,7 @@ public class HW24{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
 		int ans = 0;
 		int card[][] = new int[4][13];
-		//¦pªG©â¹L´N³]¬°1¡A¥¼©â¹L¬°0
+		//å¦‚æœæŠ½éå°±è¨­ç‚º1ï¼ŒæœªæŠ½éç‚º0
 		String name[] = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
 		int color, number, flag;
 		double player_point[] = new double[52], computer_point[] = new double[52], player_sum = 0, computer_sum = 0;
@@ -32,16 +32,16 @@ public class HW24{
 					}
 					switch(color){
 						case 0:
-							System.out.println("©â¨ì:±öªá"+name[number]+" ,§AªºÂI¼Æ:"+player_sum);
+							System.out.println("æŠ½åˆ°:æ¢…èŠ±"+name[number]+" ,ä½ çš„é»æ•¸:"+player_sum);
 							break;
 						case 1:
-							System.out.println("©â¨ì:·R¤ß"+name[number]+" ,§AªºÂI¼Æ:"+player_sum);
+							System.out.println("æŠ½åˆ°:æ„›å¿ƒ"+name[number]+" ,ä½ çš„é»æ•¸:"+player_sum);
 							break;
 						case 2:
-							System.out.println("©â¨ì:¤è¶ô"+name[number]+" ,§AªºÂI¼Æ:"+player_sum);
+							System.out.println("æŠ½åˆ°:æ–¹å¡Š"+name[number]+" ,ä½ çš„é»æ•¸:"+player_sum);
 							break;
 						case 3:
-							System.out.println("©â¨ì:¶Â®ç"+name[number]+" ,§AªºÂI¼Æ:"+player_sum);
+							System.out.println("æŠ½åˆ°:é»‘æ¡ƒ"+name[number]+" ,ä½ çš„é»æ•¸:"+player_sum);
 							break;
 						default:
 							break;
@@ -49,15 +49,15 @@ public class HW24{
 				}
 			}while(flag!=0);
 			if(player_sum > 10.5){
-				System.out.println("ª±®aÃz¤F¡A¹q¸£Àò³Ó!");
+				System.out.println("ç©å®¶çˆ†äº†ï¼Œé›»è…¦ç²å‹!");
 				game_falg = false;
 				break;
 			}
-			System.out.print("¥[µP½Ğ¿é¤J1¡A¤£¥[µP½Ğ¿é¤J0: ");
+			System.out.print("åŠ ç‰Œè«‹è¼¸å…¥1ï¼Œä¸åŠ ç‰Œè«‹è¼¸å…¥0: ");
 			ans = Integer.parseInt(buf.readLine());
 		}while(ans == 1);
 
-		player_sum -= player_point[0];	//ª±®aÂi­±¤WÂI¼Æ¥²¶·¦©°£²Ä¤@±i
+		player_sum -= player_point[0];	//ç©å®¶æª¯é¢ä¸Šé»æ•¸å¿…é ˆæ‰£é™¤ç¬¬ä¸€å¼µ
 		System.out.println("");
 		System.out.println("------------------");
 		System.out.println("");
@@ -79,16 +79,16 @@ public class HW24{
 					}
 					switch(color){
 						case 0:
-							System.out.println("¹q¸£©â¨ì:±öªá"+name[number]+" ,¹q¸£ªºÂI¼Æ:"+computer_sum);
+							System.out.println("é›»è…¦æŠ½åˆ°:æ¢…èŠ±"+name[number]+" ,é›»è…¦çš„é»æ•¸:"+computer_sum);
 							break;
 						case 1:
-							System.out.println("¹q¸£©â¨ì:·R¤ß"+name[number]+" ,¹q¸£ªºÂI¼Æ:"+computer_sum);
+							System.out.println("é›»è…¦æŠ½åˆ°:æ„›å¿ƒ"+name[number]+" ,é›»è…¦çš„é»æ•¸:"+computer_sum);
 							break;
 						case 2:
-							System.out.println("¹q¸£©â¨ì:¤è¶ô"+name[number]+" ,¹q¸£ªºÂI¼Æ:"+computer_sum);
+							System.out.println("é›»è…¦æŠ½åˆ°:æ–¹å¡Š"+name[number]+" ,é›»è…¦çš„é»æ•¸:"+computer_sum);
 							break;
 						case 3:
-							System.out.println("¹q¸£©â¨ì:¶Â®ç"+name[number]+" ,¹q¸£ªºÂI¼Æ:"+computer_sum);
+							System.out.println("é›»è…¦æŠ½åˆ°:é»‘æ¡ƒ"+name[number]+" ,é›»è…¦çš„é»æ•¸:"+computer_sum);
 							break;
 						default:
 							break;
@@ -102,15 +102,15 @@ public class HW24{
 		if(game_falg){
 			System.out.println("");
 			System.out.println("------------------");
-			player_sum += player_point[0];	//ª±®a©Ò¦³ÂI¼Æ¥²¶·¥[¦^²Ä¤@±i
+			player_sum += player_point[0];	//ç©å®¶æ‰€æœ‰é»æ•¸å¿…é ˆåŠ å›ç¬¬ä¸€å¼µ
 			if(computer_sum > 10.5){
-				System.out.println("¹q¸£Ãz¤F¡Aª±®aÀò³Ó¡I");
+				System.out.println("é›»è…¦çˆ†äº†ï¼Œç©å®¶ç²å‹ï¼");
 			}else if(player_sum > computer_sum){
-				System.out.println("ª±®aÂI¼Æ¤j©ó¹q¸£¡Aª±®aÀò³Ó¡I");
+				System.out.println("ç©å®¶é»æ•¸å¤§æ–¼é›»è…¦ï¼Œç©å®¶ç²å‹ï¼");
 			}else if(player_sum == computer_sum){
-				System.out.println("ª±®aÂI¼Æµ¥©ó¹q¸£¡A¹q¸£Àò³Ó¡I");
+				System.out.println("ç©å®¶é»æ•¸ç­‰æ–¼é›»è…¦ï¼Œé›»è…¦ç²å‹ï¼");
 			}else{
-				System.out.println("ª±®aÂI¼Æ¤p©ó¹q¸£¡A¹q¸£Àò³Ó¡I");
+				System.out.println("ç©å®¶é»æ•¸å°æ–¼é›»è…¦ï¼Œé›»è…¦ç²å‹ï¼");
 			}
 		}
 	}

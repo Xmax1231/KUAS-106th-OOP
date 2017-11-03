@@ -1,4 +1,4 @@
-import java.io.*;
+ï»¿import java.io.*;
 import java.util.Date;
 public class HW34{
 	public static void main(String[] argv) throws IOException{
@@ -13,7 +13,7 @@ public class HW34{
 		boolean e_flag, n_flag, o_flag;
 		//-------------------------------------
 
-		System.out.print("½Ğ¿é¤J±b¸¹(²Ä¤@­Ó¦r¬°¤j¼g­^¤å¡B¥B¥²¶·8-12­Ó¦r)¡G");
+		System.out.print("è«‹è¼¸å…¥å¸³è™Ÿ(ç¬¬ä¸€å€‹å­—ç‚ºå¤§å¯«è‹±æ–‡ã€ä¸”å¿…é ˆ8-12å€‹å­—)ï¼š");
 		account[count] = buf.readLine();
 		i = 0;
 		while(i<5){
@@ -31,20 +31,20 @@ public class HW34{
 				}
 			}
 			if(account[count].equals(account[i])){
-				System.out.println("¤w¸g¦³¦¹±b¸¹¤F¡I");
-				System.out.print("½Ğ¿é¤J±b¸¹(²Ä¤@­Ó¦r¬°¤j¼g­^¤å¡B¥B¥²¶·8-12­Ó¦r)¡G");
+				System.out.println("å·²ç¶“æœ‰æ­¤å¸³è™Ÿäº†ï¼");
+				System.out.print("è«‹è¼¸å…¥å¸³è™Ÿ(ç¬¬ä¸€å€‹å­—ç‚ºå¤§å¯«è‹±æ–‡ã€ä¸”å¿…é ˆ8-12å€‹å­—)ï¼š");
 				account[count] = buf.readLine();
 				i = 0;
 			}else if(account[count].length()<8||account[count].length()>12||account[count].charAt(0)>='a'||e_flag==false||n_flag==false||o_flag==false){
-				System.out.println("¿ù»~®æ¦¡¡I");
-				System.out.print("½Ğ¿é¤J±b¸¹(²Ä¤@­Ó¦r¬°¤j¼g­^¤å¡B¥B¥²¶·8-12­Ó¦r)¡G");
+				System.out.println("éŒ¯èª¤æ ¼å¼ï¼");
+				System.out.print("è«‹è¼¸å…¥å¸³è™Ÿ(ç¬¬ä¸€å€‹å­—ç‚ºå¤§å¯«è‹±æ–‡ã€ä¸”å¿…é ˆ8-12å€‹å­—)ï¼š");
 				account[count] = buf.readLine();
 				i = 0;
 			}else
 				i++;
 		}
 		//-------------------------------------	
-		System.out.print("½Ğ¿é¤J±K½X(¤£¯à»P±b¸¹¦V¦P¡B¥B¥²¶·8-12­Ó¦r)¡G");
+		System.out.print("è«‹è¼¸å…¥å¯†ç¢¼(ä¸èƒ½èˆ‡å¸³è™Ÿå‘åŒã€ä¸”å¿…é ˆ8-12å€‹å­—)ï¼š");
 		password[count] = buf.readLine();
 		for(;;){	
 			e_flag = n_flag = o_flag = false;
@@ -60,35 +60,35 @@ public class HW34{
 				}
 			}
 			if(password[count].equals(account[count])){
-				System.out.println("¤£¯à»P±b¸¹¬Û¦P¡I");
-				System.out.print("½Ğ¿é¤J±K½X(¤£¯à»P±b¸¹¦V¦P¡B¥B¥²¶·8-12­Ó¦r)¡G");
+				System.out.println("ä¸èƒ½èˆ‡å¸³è™Ÿç›¸åŒï¼");
+				System.out.print("è«‹è¼¸å…¥å¯†ç¢¼(ä¸èƒ½èˆ‡å¸³è™Ÿå‘åŒã€ä¸”å¿…é ˆ8-12å€‹å­—)ï¼š");
 				password[count] = buf.readLine();
 			}else if(password[count].length()<8||password[count].length()>12||password[count].charAt(0)>='a'||e_flag==false||n_flag==false||o_flag==false){
-				System.out.println("¿ù»~®æ¦¡¡I");
-				System.out.print("½Ğ¿é¤J±K½X(¤£¯à»P±b¸¹¦V¦P¡B¥B¥²¶·8-12­Ó¦r)¡G");
+				System.out.println("éŒ¯èª¤æ ¼å¼ï¼");
+				System.out.print("è«‹è¼¸å…¥å¯†ç¢¼(ä¸èƒ½èˆ‡å¸³è™Ÿå‘åŒã€ä¸”å¿…é ˆ8-12å€‹å­—)ï¼š");
 				password[count] = buf.readLine();
 			}else{
-				System.out.print("½Ğ¦A¦¸¿é¤J±K½X¡G");
+				System.out.print("è«‹å†æ¬¡è¼¸å…¥å¯†ç¢¼ï¼š");
 				password_again = buf.readLine();
 				if(password[count].equals(password_again)){break;}else{
-					System.out.println("±K½X¿ù»~¡I");
-					System.out.print("½Ğ¿é¤J±K½X(¤£¯à»P±b¸¹¦V¦P¡B¥B¥²¶·8-12­Ó¦r)¡G");
+					System.out.println("å¯†ç¢¼éŒ¯èª¤ï¼");
+					System.out.print("è«‹è¼¸å…¥å¯†ç¢¼(ä¸èƒ½èˆ‡å¸³è™Ÿå‘åŒã€ä¸”å¿…é ˆ8-12å€‹å­—)ï¼š");
 					password[count] = buf.readLine();
 				}
 			}
 		}
 		//-------------------------------------	.
-		System.out.print("½Ğ¿é¤J«H½c¡G");
+		System.out.print("è«‹è¼¸å…¥ä¿¡ç®±ï¼š");
 		Email[count] = buf.readLine();
 		do{
 			if(Email[count].split("@").length==2&&Email[count].charAt(0)!='@'&&Email[count].charAt(Email[count].length()-1)!='@'){
 				break;
 			}
-			System.out.println("®æ¦¡¿ù»~¡I");
-			System.out.print("½Ğ¿é¤J«H½c¡G");
+			System.out.println("æ ¼å¼éŒ¯èª¤ï¼");
+			System.out.print("è«‹è¼¸å…¥ä¿¡ç®±ï¼š");
 			Email[count] = buf.readLine();
 		}while(true);
 		Date dt = new Date();
-		System.out.println(account[count]+" §A¦n¡AÅwªï¨Ó¦Û "+Email[count].split("@")[1]+" ªº§A¡A§Aªºµù¥U®É¶¡¬O "+(dt.getYear()+1900)+"/"+dt.getMonth()+"/"+dt.getDate()+" "+dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds());
+		System.out.println(account[count]+" ä½ å¥½ï¼Œæ­¡è¿ä¾†è‡ª "+Email[count].split("@")[1]+" çš„ä½ ï¼Œä½ çš„è¨»å†Šæ™‚é–“æ˜¯ "+(dt.getYear()+1900)+"/"+dt.getMonth()+"/"+dt.getDate()+" "+dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds());
 	}
 }
